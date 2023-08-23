@@ -1,0 +1,17 @@
+<head>
+    <title>
+        Create Patient
+    </title>
+</head>
+<body>
+    <h2>Create Patient</h2>
+    <form method="post">
+        <table border="1">
+            {{form.as_table}}
+            {% csrf_token %}
+        </table>
+        <br/>
+        <input type="submit" value="Save"/>
+    </form>
+
+</body>
